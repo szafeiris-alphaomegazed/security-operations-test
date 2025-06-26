@@ -4,6 +4,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read # for actions/checkout
+  security-events: write # for upload-sarif
+
 jobs:
   build:
     name: Build
